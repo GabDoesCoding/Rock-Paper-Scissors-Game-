@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors Game!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors Game!</h1>
+        <p>A player vs. computer gameplay.</p>
+    </header>
+    <main>
+        <div class="user-score-div">
+            <p id="yourScore">Your Score: 0</p>
+            <div class="inner-buttons">
+                <button id="userRock">✊</button>
+                <button id="userPaper">✋</button>
+                <button id="userScissors">✌️</button>
+            </div>
+        </div>
+        <div class="comp-score-div">
+            <p id="compScore">Computer Score: 0</p>
+            <div class="inner-buttons">
+                <button onclick="CompButtons()" id="compRock">✊</button>
+                <button onclick="CompButtons()" id="compPaper">✋</button>
+                <button onclick="CompButtons()" id="compScissors">✌️</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 id="chosenMoves">Pick a Move!</h2>
+        <p id="result">You did not choose a move yet.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- ✊ (Rock)
+✋ (Paper)
+✌️ (Scissors) -->
